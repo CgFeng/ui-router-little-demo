@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routerApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>ui-router-demo</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="app/basic/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="app/basic/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">FengCg</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a ui-sref="gallery">Gallery</a></li>
+                <li><a ui-sref="about">About</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a ui-sref="gallery">Gallery</a></li>
+                <li><a ui-sref="about">About</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div ui-view></div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="app/basic/js/angular.min.js"></script>
+    <script type="text/javascript" src="app/basic/js/angular-ui-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="app/basic/js/config.js"></script>
+    <script src="app/basic/js/materialize.js"></script>
+</body>
+</html>
